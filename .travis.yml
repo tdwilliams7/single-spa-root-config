@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - node
 script:
-  - yarn build
+  - npm build
   - echo "Commit sha - $TRAVIS_COMMIT"
   - mkdir -p dist/@troy-williams/root-config/$TRAVIS_COMMIT
   - mv dist/*.* dist/@troy-williams/root-config/$TRAVIS_COMMIT/
